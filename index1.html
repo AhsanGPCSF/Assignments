@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div ul {
+            display: flex;
+        }
+
+        ul a {
+            text-decoration: none;
+            padding: 11px 26px;
+            color: deeppink;
+
+        }
+
+        ul li {
+            list-style: none;
+            padding: 0px 0px;
+        }
+
+        .nav {
+            padding: 5px 45px;
+            background: pink;
+        }
+
+        #headerbutton {
+            position: relative;
+            left: 300px;
+
+        }
+
+        button {
+            padding: 10px 25px;
+            border-radius: 27px;
+            border: none;
+            background: hotpink;
+            color: white;
+            margin-top: -1px;
+        }
+
+        #picBlock img {
+            width: 100%;
+        }
+        #title {
+            position: absolute;
+            top: 200px;
+            left: -300px;
+            right: 0;
+            margin: auto;
+            width: fit-content;
+
+
+        }
+
+        #title p {
+            font-size: 16px;
+            color: deeppink;
+
+        }
+
+        #title h1 {
+            color: deeppink;
+            font-size: 30px;
+        }
+        }
+
+        #title button {
+            background: #b7b7b7;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-top: 26px;
+            color: blue;
+        }
+
+        #parent {
+            display: flex;
+
+            height: 150px;
+
+            align-items: center;
+        }
+
+
+        div div.child {
+
+            height: 250px;
+            width: 100px;
+            background-color: red;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .child:nth-child(1) {
+            flex-grow: 1;
+            background-color: rgb(218, 142, 155);
+
+        }
+
+        .child:nth-child(2) {
+            flex-grow: 1;
+            background-color: rgb(246, 129, 148);
+        }
+
+        .child:nth-child(3) {
+            flex-grow: 1;
+            background-color: rgb(231, 57, 86);
+
+        }
+
+        #title2 {
+            padding: 30px;
+        }
+
+        #Button3 {
+            background-color: transparent;
+            border: 2px solid;
+            border-radius: 25px;
+            margin-top: 37px;
+            color: white;
+        }
+
+        #Button4 {
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 25px;
+            margin-top: 37px;
+            color: white;
+        }
+
+        #Button5 {
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 25px;
+            margin-top: 37px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="nav">
+            <ul>
+                <li> <a href=""> Home </a></li>
+                <li> <a href=""> About </a></li>
+                <li> <a href=""> Services </a></li>
+                <li> <a href=""> Quotes </a></li>
+                <li> <a href=""> Portfilio </a></li>
+                <li> <a href=""> Shop </a></li>
+                <li> <a href=""> Blog </a></li>
+                <li> <a href=""> Contant </a></li>
+                <li id="headerbutton"> <button> Request A Quotes </button> </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="picBlock">
+        <img src="pic/lap1.jpg" alt="">
+
+        <div id="title">
+            <p>WORDS OF WISDOM</p>
+            <h1>We have the best <br> Printing Services in the <br> Market.</h1>
+            <button class="button2">Read More</button>
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+        <div id="parent">
+            <div class="child">
+                <div id="title2">
+                    <p>we work with passion </p>
+                    <h1>Proprating Services</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto natus praesentium repudiandae
+                        soluta, aliquid error? Suscipit ipsam itaque debitis maiores omnis. Nesciunt corrupti in minima
+                        modi tempora aperiam rem laborum.</p>
+                    <button id="Button3">Read More</button>
+                </div>
+            </div>
+            <div class="child">
+                <div id="title2">
+                    <p>we work with passion </p>
+                    <h1>Graphic Design</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto natus praesentium repudiandae
+                        soluta, aliquid error? Suscipit ipsam itaque debitis maiores omnis. Nesciunt corrupti in minima
+                        modi tempora aperiam rem laborum.</p>
+                    <button id="Button4">Read More</button>
+                </div>
+            </div>
+            <div class="child">
+                <div id="title2">
+                    <p>we work with passion </p>
+                    <h1>Copying Services</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto natus praesentium repudiandae
+                        soluta, aliquid error? Suscipit ipsam itaque debitis maiores omnis. Nesciunt corrupti in minima
+                        modi tempora aperiam rem laborum.</p>
+                    <button id="Button5">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

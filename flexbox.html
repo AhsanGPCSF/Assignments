@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          #parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: purple;
+            border: 3px solid orangered;
+            height: 100px;
+            width: 500px;
+        }
+        .abc{
+            height: 70px;
+            width: 70px;
+            align-items: center;
+            justify-content: center;
+            margin: 4px;
+        }
+    
+        .abc:nth-child(1) {
+            flex-grow: 1;
+            background: orangered;
+        }
+
+        .abc:nth-child(2) {
+            background: orangered;
+            flex-grow: 3;
+        }
+
+        .abc:nth-child(3) {
+            background: orangered;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="parent">
+        <div class="abc">A</div>
+        <div class="abc">B</div>
+        <div class="abc">C</div>
+    </div>
+    <!-- If we have an absolute elomenet and want to bind it within its parent, 
+    set its parent's position to non-static, recommended> relative -->
+
+    <!-- <div id="parent">
+
+        <div id="child">
+
+        </div>
+
+    </div> -->
+
+
+    <!-- if position is static, set margin auto and width -->
+    <!-- if position is absolute, set margin auto and width, left 0 and right 0 -->
+
+    <!-- <div>
+        <img id="main-background" src="back.jpg" alt="">
+
+        <div>
+            <span>
+                START-UP
+            </span>
+
+
+            <div>
+                <h2>Easy way to launch your startup</h2>
+                <h2>Simple and powerful</h2>
+            </div>
+            
+            <div>
+                <input type="text">
+                <button>Get and access</button>
+            </div>
+
+            <div>
+                <small>Scroll down to explore</small>
+            </div>
+
+        </div>
+    </div> -->
+
+</body>
+
+</html>

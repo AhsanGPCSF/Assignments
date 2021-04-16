@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation assignment 2 with help of animation</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .c:nth-child(1){
+        height: 70px;
+            width: 70px;
+            background-color: rgb(0,204,153);
+            border: 5px solid rgb(169, 171, 7);
+            border-radius: 8px;
+            margin: 4px;
+    }
+    .c:nth-child(2){
+        height: 70px;
+            width: 70px;
+            background-color: rgb(0,204,153);
+            border: 5px solid rgb(169, 171, 7);
+            border-radius: 8px;
+            margin: 4px;
+    }
+    .c:nth-child(3){
+        height: 70px;
+            width: 70px;
+            background-color: rgb(0,204,153);
+            border: 5px solid rgb(169, 171, 7);
+            border-radius: 8px;
+            margin: 4px;
+    }
+    .c:nth-child(4){
+        height: 70px;
+            width: 70px;
+            background-color: rgb(0,204,153);
+            border: 5px solid rgb(169, 171, 7);
+            border-radius: 8px;
+            margin: 4px;
+    }
+
+    @keyframes myanimation{
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.1);
+        }
+    }
+    /* .c:nth-child(1){
+        animation: myanimation 1s linear infinite;
+        animation-play-state: paused;
+    } */
+    .c:nth-child(1):hover{
+        /* animation: myanimation 1s linear infinite;
+        animation-play-state: running; */
+        animation: myanimation 1s linear 0s;
+    }
+    .c:nth-child(2):hover{
+        animation: myanimation 1s linear 0s;
+    }
+    .c:nth-child(3):hover{
+        animation: myanimation 1s linear 0s;
+    }
+    .c:nth-child(4):hover{
+        animation: myanimation 1s linear 0s;
+    }
+    #parent{
+        display: flex;
+        margin: auto;
+        width: fit-content;
+        margin-top: 15%;
+    }
+    body{
+        background-color: black;
+    }
+</style>
+<body>
+    <div id="parent">
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+        <div class="c"></div>
+    </div>
+</body>
+</html>

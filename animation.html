@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #rabbit {
+            position: absolute;
+            right: 0;
+            transition: right 5s linear 0s, opacity 3s linear 0s;
+        }
+
+        /* opacity ranges from 0 to 1  */
+
+        #rabbit:hover {
+            right: 100%;
+            opacity: 0.5;
+        }
+
+        #parent {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            transition: background-color 2s linear 0s, width 1s linear 0s;
+        }
+
+        #parent:hover{
+            background-color: green;
+            width:600px;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div id="parent">
+
+    </div>
+
+    <!-- Two types of animations -->
+    <!-- 1).Simple animations, transition -->
+    <!-- 1).Advance animations, animations -->
+
+    <img id="rabbit" src="pic/rabbit.gif" alt="">
+
+</body>
+
+</html>

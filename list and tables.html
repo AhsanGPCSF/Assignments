@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <!-- he <table> tag defines an HTML table.
+
+        Each table row is defined with a <tr> tag. Each table header is defined with a <th> tag. Each table data/cell is defined with a <td> tag.
+        
+        By default, the text in <th> elements are bold and centered.
+        
+        By default, the text in <td> elements are regular and left-aligned. -->
+    <ul type="disc">
+        <li>first unordered list</li>
+        <li>second unordered list
+            <ul type="square">
+                <li>nested 1</li>
+                <li>nested 2</li>
+                <li>nested 3</li>
+            </ul>
+        </li>
+        <li>third unordered list</li>
+    </ul>
+    <ol type="I">
+        <li>first ordered list</li>
+        <li>second ordered list
+            <ol type="A">
+                <li>nested 1</li>
+                <li>nested 2</li>
+                <li>nested 3</li>
+            </ol>
+        </li>
+        <li>third ordered list</li>
+    </ol>
+    <p>My Shopping List</p>
+    <ul type="circle">
+        <li>milk</li>
+        <li>Bread</li>
+        <li>Chocolate</li>
+        <li>More Chocolate</li>
+    </ul>
+    <!-- Definition List -->
+    <dl>
+        <dt>first Computer</dt>
+        <dd>Computer is an Electronic Machine</dd>
+        <dt>Second Computer</dt>
+        <dd>Computer is an Electronic Machine</dd>
+        <dt>Computer</dt>
+        <dd>Third Computer is an Electronic Machine</dd>
+    </dl>
+    <!-- Tables -->
+    <table border="1">
+        <tr>
+            <td>Row 1 , coloum 1</td>
+            <td>Row 1, coloum 2</td>
+        </tr>
+        <tr>
+            <td>Row 2 , coloum 1</td>
+            <td>Row 2, coloum 2</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>Ahsan</td>
+            <td>2 Lakh</td>
+        </tr>
+    </table>
+    <br>
+    Cellpadding and Cellspacing Attributes
+    <!-- There are two attributes called cellpadding and cellspacing 
+        which you will use to adjust the white space in your table cells. 
+        The cellspacing attribute defines space between table cells, 
+        while cellpadding represents the distance between cell borders and the content within a cell
+        . -->
+    <table border="1" cellpadding=3 cellspacing=4>
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>Ahsan</td>
+            <td>2 Lakh</td>
+        </tr>
+    </table><br>
+    <table border="1">
+        <tr>
+        <th>Coloum 1</th>
+        <th>Coloum 2</th>
+        <th>Coloum 3</th>
+        </tr>
+        <tr>
+            <td rowspan="2">data1</td>
+            <td>data2</td>
+            <td>data3</td>
+        </tr>
+        <tr>
+            <td>data1</td>
+            <td>data2</td>
+        </tr>
+        <tr>
+            <td colspan="3">data1</td>
+        </tr>
+    </table><br>
+    <table border="1" cellpadding=0 cellspacing=0>
+        <tr>
+            <td rowspan="2"></td>
+            <th colspan="2">Average</th>
+            <th rowspan="2">Red Eye</th>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td>Weight</td>
+        </tr>
+        <tr>
+            <td>Males</td>
+            <td>1.9</td>
+            <td>0.003</td>
+            <td>40%</td>
+        </tr>
+        <tr>
+            <td>Females</td>
+            <td>1.7</td>
+            <td>0.002</td>
+            <td>43%</td>
+        </tr>
+    </table><br>
+    <!-- Assignment -->
+    <h2>Meet the CS avators</h2>
+    <table id="tab" cellpadding=5>
+        <tr>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Hobbies</th>
+        </tr>
+        <tr>
+            <td><img src="pic/img1.jpg" alt="image" height="35px" width="40px"></td>
+            <td>Hopper</td>
+            <td>Eat Donuts,Reading Books</td>
+        </tr>
+        <tr>
+            <td><img src="pic/img2.jpg" alt="image" height="35px" width="40px"></td>
+            <td>Dopper</td>
+            <td>Eat Donuts, Sleeping, Working</td>
+        </tr>
+        <tr>
+            <td><img src="pic/img3.jpg" alt="image" height="35px" width="40px"></td>
+            <td>Supper</td>
+            <td>Cricket, Garderning, Working</td>
+        </tr>
+    </table><br>
+</body>
+
+</html>

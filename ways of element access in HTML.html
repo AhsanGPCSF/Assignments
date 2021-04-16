@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ways of element access in HTML</title>
+</head>
+<style>
+    [city] #new .data article{
+            background-color: green;
+            color: white;
+        }
+
+        #article span .data aside{
+            background-color: blue;
+            color: white;
+        }
+
+        article #data .city span{
+            background-color:red;
+        }
+</style>
+<body>
+    <div city>
+        <div id="new">
+            <div class="data">
+                <article>Green</article>
+            </div>
+        </div>
+    </div>
+    <div id="article">
+        <span>
+            <div class="data">
+            <aside>blue</aside>
+            </div>
+        </span>
+    </div>
+    <article>
+        <div id="data">
+            <div class="city">
+                <span>Red</span>
+            </div>
+        </div>
+    </article>
+</body>
+</html>

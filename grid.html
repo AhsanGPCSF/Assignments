@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .item:nth-child(1){
+            background-color: rgb(143, 56, 48);
+            border: 2px solid white;
+            grid-area: area1
+        }
+        .item:nth-child(2){
+            background-color: rgb(47, 107, 87);
+            border: 2px solid white;
+            grid-area: area2
+        }
+        .item:nth-child(3){
+            background-color: rgb(15, 87, 2);
+            border: 2px solid white;
+            grid-area: area3
+        }
+        .item:nth-child(4){
+            background-color: rgb(56, 85, 5);
+            border: 2px solid white;
+            grid-area: area4
+        }
+        .item:nth-child(5){
+            background-color: rgb(145, 223, 10);
+            border: 2px solid white;
+            grid-area: area5
+        }
+        .item:nth-child(6){
+            background-color: rgb(145, 182, 80);
+            border: 2px solid white;
+            grid-area: area6
+        }
+        .item1:nth-child(1){
+            background-color: rgb(143, 56, 48);
+            border: 2px solid white;
+            grid-area: area1
+        }
+        .item1:nth-child(2){
+            background-color: rgb(47, 107, 87);
+            border: 2px solid white;
+            grid-area: area2
+        }
+        .item1:nth-child(3){
+            background-color: rgb(15, 87, 2);
+            border: 2px solid white;
+            grid-area: area3
+        }
+        .item1:nth-child(4){
+            background-color: rgb(56, 85, 5);
+            border: 2px solid white;
+            grid-area: area4
+        }
+        .item1:nth-child(5){
+            background-color: rgb(145, 223, 10);
+            border: 2px solid white;
+            grid-area: area5
+        }
+        .parent{
+            display: grid;
+            height: 350px;
+            width: 350px;
+            float:inline-start;
+            grid-template:
+            "area1 area1 area1 area1"
+            "area2 area3 area4 area4"
+            "area5 area5 area6 area6"
+        }
+        .parent2{
+            display: grid;
+            height: 350px;
+            width: 350px;
+            grid-template:
+            "area1 area2 area3"
+            "area1 area4 area3"
+            "area5 area5 area5"
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    </div>
+    <div class="parent2">
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+        <div class="item1"></div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+</head>
+<style>
+@keyframes wheelRotate {
+
+
+from{
+
+    transform: rotate(0deg);
+
+}
+
+to{
+
+    transform: rotate(360deg);
+}
+
+}
+
+@keyframes carMoving {
+
+from {
+    left: 0;
+}
+
+
+to {
+    left: 100%;
+
+}
+
+}
+#myCar {
+width: 200px;
+position: absolute;
+top: 31px;
+animation: carMoving 4s linear 0s;
+}
+
+
+#myCar :first-child {
+width: 100%;
+}
+
+#myCar .wheel:nth-child(2) {
+
+width: 28px;
+position: absolute;
+top: 45px;
+left: 32px;
+animation: wheelRotate 2s linear 0s;
+animation-iteration-count: 2;
+
+}
+
+
+#myCar .wheel:nth-child(3) {
+
+
+width: 28px;
+position: absolute;
+top: 45px;
+left: 145px;
+animation: wheelRotate 2s linear 0s;
+animation-iteration-count: 2;
+}
+.road:nth-child(2){
+    position: absolute;
+    left: 46%;
+}
+</style>
+<body>
+    <img class="road" src="pic/myroad.jpg" alt="">
+    <img class="road" src="pic/myroad.jpg" alt="">
+<div id="myCar">
+    <img src="pic/my-car.png" alt="">
+
+    <img class="wheel" src="pic/wheel.png" alt="">
+    <img class="wheel" src="pic/wheel.png" alt="">
+</div>
+</body>
+</html>

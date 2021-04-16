@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Assignment</title>
+    <style>
+        /* Height width only work on Block level elements like as 
+        div, header, footer, aside, section, article etc. it did not
+        work on inline block like as span, input, label, em,strong, i,b etc */
+        body #first {
+            background-color: orangered;
+            height: 85px;
+            width: 85px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        body div#sec {
+            background-color: green;
+            height: 75px;
+            width: 75px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        body #third {
+            background-color: purple;
+            height: 60px;
+            width: 60px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        div.triangle {
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid orangered;
+            height: 10px;
+            width: 1px;
+        }
+        .circle {
+            height:100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first"></div>
+    <div id="sec"></div>
+    <div id="third"></div>
+    <div class="triangle"></div>
+    <div class="circle"></div>
+</body>
+
+</html>
